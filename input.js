@@ -22,19 +22,19 @@ const handleUserInput = (key) => {
 	}
 
 	if (key === 'w') {
-		console.log('up');
+		connection.write(`Move: up`);
 	}
 
 	if (key === 'a') {
-		console.log('left');
+		connection.write(`Move: left`);
 	}
 
 	if (key === 's') {
-		console.log('down');
+		connection.write(`Move: down`);
 	}
 
 	if (key === 'd') {
-		console.log('right');
+		connection.write(`Move: right`);
 	}
 };
 
