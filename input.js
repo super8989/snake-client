@@ -1,6 +1,7 @@
 // Stores the active TCP connection object.
 let connection;
 
+// user input logic
 const setupInput = (conn) => {
 	connection = conn;
 	const stdin = process.stdin;
@@ -16,6 +17,7 @@ const setupInput = (conn) => {
 	return stdin;
 };
 
+// depending on key pressed, sends action back to server
 const handleUserInput = (key) => {
 	if (key === '\u0003') {
 		process.exit();
